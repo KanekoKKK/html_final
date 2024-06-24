@@ -1,27 +1,39 @@
-.members {
+.reports {
     background-color: #f8f8f8;
     padding-top: 45px;
     padding-bottom: 55px;
 }
 
-.members h2 {
-    font-size: 22px;
+.reports h2 {
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
 }
 
-.members h2::after {
+.reports h2::after {
     content: "";
     display: block;
-    width: 36px;
+    width: 360px;
     height: 3px;
     background-color: #000000;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.member-list {
+.reports h3 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.reports h4 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.picture-list {
     display: flex;
     padding-top: 40px;
     padding-bottom: 10px;
@@ -30,23 +42,23 @@
     overflow: scroll;
 }
 
-.member-list li {
+.picture-list li {
     flex-shrink: 0;
     width: 260px;
     margin-left: 75px;
 }
 
-.member-list li:first-child {
+.picture-list li:first-child {
     margin-left: 0;
 }
 
 @media (max-width: 800px) {
-    .member-list {
+    .picture-list {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .member-list li {
+    .picture-list li {
         width: 220px;
         margin-left: 30px;
     }
