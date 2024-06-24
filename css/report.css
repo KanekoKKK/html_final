@@ -1,16 +1,15 @@
-.reports {
-    background-color: #f8f8f8;
+.reports-top {
     padding-top: 45px;
     padding-bottom: 55px;
 }
 
-.reports h2 {
+.report-top h2 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
 }
 
-.reports h2::after {
+.report-top h2::after {
     content: "";
     display: block;
     width: 360px;
@@ -19,6 +18,14 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.reports {
+    background-color: #b7c0c7;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .reports h3 {
