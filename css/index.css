@@ -1,205 +1,365 @@
 @charset "utf-8";
 
-nav.floating {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    background-color: #d0d0d0;
-}
-
-.first-view {
-    height: calc(100vh - 110px);
-    background-image: url(../images/index/bg_main.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.first-view-text {
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40ox;
-    padding-bottom: 80px;
-    color: #ffffff;
-    font-weight: bold;
-    text-shadow: 1px 1px 10px #4b2c14;
-}
-
-.first-view-text h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 56px;
-    line-height: 72px;
-}
-
-.first-view-text p {
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-.lead {
-    max-width: 1200px;
-    margin: 60px auto;
-}
-
-*,
-::before,
-::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-ul, ol {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+html {
+    font-size: 0.625rem;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16pt;
-    color: #000000;
-    line-height: 1;
-    background-color: #ffffff;
+    color: #3C3C3C;
+    background-color: #FCFCFA;
+    line-height: 1.7;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
 }
 
-img {
-    max-width: 100%;
+* {
+    /*ブラウザのデフォルト*/
+    margin: 0;
+    padding: 0;
 }
 
-.header-inner {
-    max-width: 1200px;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+
+
+li {
+    list-style: none; /*箇条書きの点を消去*/
+}
+
+a {
+    color: #3C3C3C;
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: auto 10vw; /*viewportの10%文の余白*/
+}
+
+h1 {
+    font-size: 4.8rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+section:not(:first-child) {
+    margin-top: 120px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6rem;
+}
+
+.title::before {
+    content: "";/*空白*/
+    height: 1px;/*線の細さ*/
+    flex-grow: 0.3; /*余白の部分に対して3割の長さ*/
+    background-color: #3C3C3C;
+    margin-right: 3rem;
+}
+
+.btn {
+    margin-top: 3rem;
+}
+
+.btn a:hover {
+    background-color: #3C3C3C;
+    color: #FCFCFA;
+}
+
+.btn a {
+    width: 300px;
+    height: 56px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FCFCFA;
+    padding: 2rem 12rem;/*上下に2rem,左右に12rem*/
+    text-transform: uppercase; /*すべて大文字に*/
+    box-shadow: 0px 0px 46px 8px #e6e6e6;
+}
+
+/*ヘッダー*/
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.toggle-menu-button {
-    display: none;
+.logo {
+    font-size: 3.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
-.header-logo {
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+}
+
+.nav ul li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.top {
+    background-image: url(../images/concept/obucity.png);
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.subtitles {
+    position: absolute;
+    left: 50vw;
+    bottom: 5vw;
+}
+
+.subtitles {
+    font-size: 3.2rem;
+    font-weight: 500;
+    padding: 0.3em 0.6em;
+    background-color: #fcfcfacc;
+}
+
+/*information*/
+.information-img {
+    width: 550px;
+}
+
+.information-img img {
+    width: 100%; /*決められた親要素に対して最大限に広がる*/
+}
+
+.information .contents .msg {
+    max-width: 42rem;
+
+}
+
+.information .contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: cnter;
+}
+
+.information .contents .msg p {
     display: block;
-    width: 170px;
+    padding-top: 2rem;
 }
 
-.site-menu ul {
+/*action*/
+
+.action .contents {
     display: flex;
 }
 
-.site-menu ul li {
-    margin-left: 20px;
-    margin-right: 20px;
+.action-bg {
+    width: 100%;
 }
 
-.site-menu ul li a {
-    font-family: 'Cherry Bomb One', cursive;
+.action-bg img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
-@media (max-width: 800px) {
-    .site-menu ul {
-        display: block;
-        text-align: center;
-    }
-
-    .site-menu li {
-        margin-top: 20px;
-    }
-
-    .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #ffffff;
-        height: 50px;
-        z-index: 10;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .header-inner {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 100%;
-        position: relative;
-    }
-
-    .header-site-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        color: #ffffff;
-        background-color: #736e62;
-        padding-top: 30px;
-        padding-bottom: 50px;
-        display: none;
-    }
-
-    .header-site-menu.is-show {
-        display: block;
-    }
-
-    .header-logo {
-        width: 100px;
-    }
-
-    .main {
-        padding-top: 50px;;
-    }
-
-    .footer-logo {
-        margin-top: 60px;
-    }
-
-    .copyright {
-        margin-top: 50px;
-    }
-
-    .toggle-menu-button {
-        display: block;
-        width: 44px;
-        height: 34px;
-        background-image: url(../images/common/icon-menu.png);
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        outline: none;
-    }
+.schedule .report {
+    position: relative;
 }
-.footer {
-    color: #ffffff;
-    background-color: #24211b;
-    padding-top: 30px;
-    padding-bottom: 15px;
+
+.action-info {
+    position: relative;
+    left: 10%;
+    bottom: 10%;
+}
+
+/*inquiry*/
+
+.inquiry .contents {
+    position: relative;
+}
+
+.inquiry-info {
+    position: absolute;
+    top: 20%;
+    left: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    color: #3C3C3C;
 }
 
-.footer-logo {
+.inquiry-bg img {
+    width: 1500px;  /* 幅を300ピクセルに設定 */
+    height: 300px; /* 高さを自動調整 */
+}
+
+.inquiry-info p {
+    margin-bottom:3rem;
+}
+
+/*location*/
+
+.location .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: ceter;
+}
+
+.location .loc div {
+    display: flex;
+}
+
+.location h3 {
     display: block;
-    width: 235px;
-    margin-top: 90px;
+    margin: 15px auto;
+    font-size: 3.2rem;
+    font-family: "Raleway" , sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.location h5 {
+    font-size: 1.4rem;
+    width: 6em;
+}
+
+.loc >div:not(:first-child) {
+    margin-top: 10px; /*住所以外の項目の上を10ピクセル空ける*/
+}
+
+
+/*footer*/
+
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.announcements {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.announcement-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.announcement-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .announcements li {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #666;
 }
 
 .copyright {
-    font-size: 14pt;
-    font-weight: bold;
-    margin-top: 90px;
+    display: block;
+    background-color: #C0E4F2; 
+    height: 40px;
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 0.5rem;
+    }
+
+    .wrapper {
+        margin: auto 5vw;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    .subtitles {
+        left: 10vw;
+        bottom: 10vw;
+        font-size: 2.4rem;
+    }
+
+    .information-img {
+        width: 100%;
+    }
+
+    .information .contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information .contents .msg {
+        text-align: center;
+    }
+
+    .btn a {
+        width: auto;
+        padding: 1rem 4rem;
+    }
+
+    .action .contents {
+        flex-direction: column;
+    }
+
+    .action-bg img {
+        height: auto;
+    }
+
+    .action-info {
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .inquiry-info {
+        position: static;
+        align-items: center;
+        text-align: center;
+        margin-top: -200px;
+    }
+
+    .location .contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: auto;
+    }
 }
