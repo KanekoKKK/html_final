@@ -212,6 +212,7 @@ header {
 
 /*location*/
 
+/*
 .location .contents {
     display: flex;
     justify-content: space-between;
@@ -237,9 +238,9 @@ header {
 }
 
 .loc >div:not(:first-child) {
-    margin-top: 10px; /*住所以外の項目の上を10ピクセル空ける*/
+    margin-top: 10px; 住所以外の項目の上を10ピクセル空ける
 }
-
+*/
 
 /*footer*/
 

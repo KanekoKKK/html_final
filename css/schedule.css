@@ -1,0 +1,129 @@
+/* HTMLとBODY要素の高さを100%に設定 */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    height: 500px;
+    background-image: url(../images/concept/obucity.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #4b2c14;
+    width: 100%;
+    margin-top: 20px; /* 余白を消す */
+}
+
+.btn {
+    margin-top: 1rem; /* 上方向のマージンを調整 */
+    width: auto; /* 幅を自動調整 */
+}
+
+
+.btn a:hover {
+    background-color: #3C3C3C;
+    color: #FCFCFA;
+}
+
+.btn a {
+    width: auto;
+    height: auto;
+    background-color: #FCFCFA;
+    padding: 1.2rem 2rem;/*上下に2rem,左右に12rem*/
+    text-transform: uppercase; /*すべて大文字に*/
+    box-shadow: 0px 0px 46px 8px #3C3C3C;
+    font-size: 14px; 
+    padding-bottom: 0.7rem;
+}
+.container {
+    display: flex;
+    justify-content: center; /* コンテンツを中央に寄せる */
+}
+
+.main-content {
+    width: 60%; 
+    padding: 20px;
+    background: white;
+    display: flex;
+    justify-content: center; /* コンテンツを中央に寄せる */
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column; /* コンテンツを縦に並べる */
+    align-items: center; /* コンテンツを中央に寄せる */
+    width: 100%;
+    max-width: 90%;
+    margin-top: 75px;
+}
+
+.feature-text {
+    max-width: 500px;
+    text-align: center; /* テキストを中央に寄せる */
+}
+
+.feature-text h4 {
+    font-size: 30px; 
+    margin-bottom: 20px; 
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .feature-text {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+.feature-text h2 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 25px;
+}
+
+.feature-text h3 {
+    text-indent: 1em;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.feature-text p {
+    text-indent: 2em;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 0;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: #C0E4F2;
+    padding: 0 0;
+    color: #666;
+}
+
