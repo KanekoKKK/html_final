@@ -7,24 +7,26 @@
         <meta name="viewport" content="width=device-width">
         <script src="js/script.js"></script>
         <link href="css/common.css" rel="stylesheet">
-        <link href="css/report.css" rel="stylesheet">
+        <link href="css/report.css" rel="stylesheet">    
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/report-slider.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">  
     </head>
     <body>
         <header class="header">
             <div class="header-inner">
                 <a class="header-logo" href="index.html">
-                    <img src="images/common/logo.png" alt="ロゴ">
+                    <img src="images/reports/home.png" alt="ロゴ">
                 </a>
                 <button class="toggle-menu-button"></button>
                 <div class="header-site-menu">
                     <nav class="site-menu">
                         <ul>
-                            <li><a href="concept.html">コンセプト</a></li>
-                            <li><a href="report.html">活動報告</a></li>
-                            <li><a href="access.html">アクセス</a></li>
+                            <li><a href="overview.html">協議会概要</a></li>
+                            <li><a href="concept.html">年間計画</a></li>
+                            <li><a href="question.html">お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,13 +34,14 @@
         </header>
         <main class="main">
             <div class="report-top">
-            <h2>2023年度 活動報告</h2><br>
+            <h2 id="2023">2023年度 活動報告</h2>
+            <a href="#2022">2022年度</a>
             </div>
             <div class="reports">
-                <h3>■総会 2023年4月15日(土)<h3><br>
+                <h3>■総会 2023年4月15日(土)<h3>
                 <h4>2023年4月15日(土) 13時30分から、大府公民館大会議室にて総会が行われました。
                     昨年度同様、規模を縮小して、感染対策を行ったうえでの開催となりました。</h4>
-                <ul class="picture-list">
+                <ul class="slider">
                     <li><img src="images/reports/2023GM_01.jpg"></li>
                     <li><img src="images/reports/2023GM_02.jpg"></li>
                     <li><img src="images/reports/2023GM_03.jpg"></li>
@@ -46,33 +49,51 @@
                     <li><img src="images/reports/2023GM_05.jpg"></li>
                     <li><img src="images/reports/2023GM_06.jpg"></li>
                 </ul>
-            </div><br>
+            </div>
             <div class="reports">
-                <h3>■春の花植え 2023年6月18日(日)<h3><br>
-                    <h4>2023年6月11日(日)の予定でしたが、天候不順のため6月18日(日)に延期して花の植え替えが行われました。
+                <h3>■春の花植え 2023年6月18日(日)<h3>
+                <h4>2023年6月11日(日)の予定でしたが、天候不順のため6月18日(日)に延期して花の植え替えが行われました。
                         環境部会のメンバーを中心にみんなで協力して作業を行いました。</h4>
-                    <ul class="picture-list">
-                        <li><img src="images/reports/2023SFR_01.jpg"></li>
-                        <li><img src="images/reports/2023SFR_02.jpg"></li>
-                        <li><img src="images/reports/2023SFR_03.jpg"></li>
-                        <li><img src="images/reports/2023SFR_04.jpg"></li>
-                        <li><img src="images/reports/2023SFR_05.jpg"></li>
-                        <li><img src="images/reports/2023SFR_06.jpg"></li>
+                <ul class="slider">
+                    <li><img src="images/reports/2023SFR_01.jpg"></li>
+                    <li><img src="images/reports/2023SFR_02.jpg"></li>
+                    <li><img src="images/reports/2023SFR_03.jpg"></li>
+                    <li><img src="images/reports/2023SFR_04.jpg"></li>
+                    <li><img src="images/reports/2023SFR_05.jpg"></li>
+                    <li><img src="images/reports/2023SFR_06.jpg"></li>
                     </ul>
-                </div><br>
+                </div>
+            <div class="report-top">
+            <h2 id="2022">2022年度 活動報告</h2>
+            <a href="#2023">2023年度</a>
+            </div>
+            <div class="reports">
+                <h3>■総会 2022年4月16日(土)<h3>
+                <h4>2022年4月16日(土) 13時30分から、大府公民館大会議室にて総会が行われました。
+                    新型コロナウイルス感染症の影響から、昨年度同様、規模を縮小して、
+                    感染対策を行ったうえでの開催となりました。</h4>
+                <ul class="slider">
+                    <li><img src="images/reports/2022GM_01.jpg"></li>
+                    <li><img src="images/reports/2022GM_02.jpg"></li>
+                    <li><img src="images/reports/2022GM_03.jpg"></li>
+                    <li><img src="images/reports/2022GM_04.jpg"></li>
+                    <li><img src="images/reports/2022GM_05.jpg"></li>
+                    <li><img src="images/reports/2022GM_06.jpg"></li>
+                </ul>
+            </div>
         </main>
         <footer class="footer">
             <nav class="site-menu">
                 <ul>
-                    <li><a href="concept.html">コンセプト</a></li>
-                    <li><a href="report.html">活動報告</a></li>
-                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="overview.html">協議会概要</a></li>
+                    <li><a href="concept.html">年間計画</a></li>
+                    <li><a href="question.html">お問い合わせ</a></li>
                 </ul>
             </nav>
-            <a class="footer-logo" href="index.html">
-                <img src="images/common/logo_footer.png" alt="ロゴ">
-            </a>
-            <p class="copyright"><small>&copy;名城大学情報工学部(嘘)</small></p>
+            <p class="copyright"><small>&copy;大府コミュニティ推進協議会</small></p>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/report.js"></script>
     </body>
 </html>
