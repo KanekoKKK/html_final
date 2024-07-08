@@ -50,6 +50,28 @@ img {
     width: 170px;
 }
 
+.btn {
+    margin-top: 1rem; /* 上方向のマージンを調整 */
+    width: auto; /* 幅を自動調整 */
+}
+
+
+.btn a:hover {
+    background-color: #3C3C3C;
+    color: #FCFCFA;
+}
+
+.btn a {
+    width: auto;
+    height: auto;
+    background-color: #FCFCFA;
+    padding: 1.2rem 2rem;/*上下に2rem,左右に12rem*/
+    text-transform: uppercase; /*すべて大文字に*/
+    box-shadow: 0px 0px 46px 8px #3C3C3C;
+    font-size: 14px; 
+    padding-bottom: 0.7rem;
+}
+
 .site-menu ul {
     display: flex;
 }
@@ -60,7 +82,7 @@ img {
 }
 
 .site-menu ul li a {
-    font-family: 'Cherry Bomb One', cursive;
+    font-family: "Kaisei Decol", serif;
 }
 
 @media (max-width: 800px) {
