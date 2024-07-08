@@ -9,18 +9,21 @@
 現在使われているページの内容を許諾を得て用いた。
 
 ## サイトマップ
-![サイトマップ](sitemap.png)
+![サイトマップ](images/sitemap.png)
 
 ## Webページの外観
 - トップページ
-
+![トップページ](images/index.png)
 - 協議会概要ページ
-
+![協議会概要](images/overview.png)
 - 活動予定ページ
-
+![活動予定](images/schedule.png)
 - 活動報告ページ
-
+![活動報告](images/report.png)
 - お問い合わせ
+![お問い合わせ](images/question.png)
+- スマホサイズ
+![mini](images/mini.png)
 
 ## 作業分担
 |      |                |                      | 
